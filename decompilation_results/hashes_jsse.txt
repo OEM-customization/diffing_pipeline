@@ -1,0 +1,2 @@
+Hash Value: 42aa16b2e0ed23736d971820a5cd941a	 Matched File: /home/vinurib/Diffing_PIPE/complete_pipeline/firmware_images/a30s/system/system/apex/com.android.art.release/javalib/arm64/boot.oat
+Hash Value: bd1c4f433d9a6b00d0de140cb17c0fd9	 Matched File: /home/vinurib/Diffing_PIPE/complete_pipeline/firmware_images/8227l_demo/system/framework/arm/boot.oat

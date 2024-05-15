@@ -1,0 +1,1491 @@
+[
+    {
+        "class_name": "android/org/bouncycastle/jcajce/PKIXExtendedParameters",
+        "only_aosp_methods": [
+            "getPolicyQualifiersRejected",
+            "getValidityDate"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/PKIXCertStoreSelector",
+        "only_aosp_methods": [
+            "getCertificate"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/digest/BCMessageDigest",
+        "only_aosp_methods": [
+            "engineGetDigestLength"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/dsa/DSASigner",
+        "only_aosp_methods": [
+            "engineGetParameters"
+        ],
+        "only_oem_methods": [
+            "derEncode",
+            "derDecode"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/dsa/DSAUtil",
+        "only_aosp_methods": [
+            "generateKeyFingerprint"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/dsa/BCDSAPrivateKey",
+        "only_aosp_methods": [
+            "toString"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/rsa/RSAUtil",
+        "only_aosp_methods": [
+            "generateExponentFingerprint",
+            "generateKeyFingerprint"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateKey",
+        "only_aosp_methods": [
+            "getEncoding",
+            "toString",
+            "engineGetKeyParameters"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPrivateCrtKey",
+        "only_aosp_methods": [
+            "writeObject",
+            "readObject"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/rsa/BCRSAPublicKey",
+        "only_aosp_methods": [
+            "engineGetKeyParameters"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/ec/SignatureSpi",
+        "only_aosp_methods": [
+            "engineGetParameters"
+        ],
+        "only_oem_methods": [
+            "encode",
+            "decode"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/util/ECUtil",
+        "only_aosp_methods": [
+            "publicKeyToString",
+            "privateKeyToString",
+            "getNameFrom",
+            "run",
+            "generateKeyFingerprint"
+        ],
+        "only_oem_methods": [
+            "lookupOidByName"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/util/BaseCipherSpi",
+        "only_aosp_methods": [
+            "erase",
+            "getBuf"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/util/BaseAgreementSpi",
+        "only_aosp_methods": [
+            "getSharedSecretBytes"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/x509/X509CertificateObject",
+        "only_aosp_methods": [
+            "createSigAlgName",
+            "getInternalCertificate",
+            "createSigAlgParams",
+            "getValidityValues",
+            "createKeyUsage",
+            "createBasicConstraints"
+        ],
+        "only_oem_methods": [
+            "getSubjectUniqueID",
+            "verify",
+            "getSignature",
+            "getKeyUsage",
+            "getExtensionBytes",
+            "getNonCriticalExtensionOIDs",
+            "hasUnsupportedCriticalExtension",
+            "getSigAlgName",
+            "getSigAlgParams",
+            "getCriticalExtensionOIDs",
+            "getSubjectDN",
+            "getExtensionValue",
+            "getNotBefore",
+            "isAlgIdEqual",
+            "getAlternativeNames",
+            "getIssuerAlternativeNames",
+            "getVersion",
+            "getBasicConstraints",
+            "getNotAfter",
+            "toString",
+            "getIssuerDN",
+            "checkSignature",
+            "getSerialNumber",
+            "getSigAlgOID",
+            "getTBSCertificate",
+            "getExtendedKeyUsage",
+            "getSubjectAlternativeNames",
+            "getIssuerUniqueID"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/x509/PEMUtil",
+        "only_aosp_methods": [
+            "isTheExpectedHeader",
+            "getBoundaries",
+            "isTheExpectedFooter"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/x509/X509SignatureUtil",
+        "only_aosp_methods": [
+            "findAlgName",
+            "lookupAlg",
+            "prettyPrintSignature",
+            "isCompositeAlgorithm"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/x509/X509CRLObject",
+        "only_aosp_methods": [
+            "createSigAlgName",
+            "getInternalCRL",
+            "createSigAlgParams"
+        ],
+        "only_oem_methods": [
+            "getThisUpdate",
+            "verify",
+            "doVerify",
+            "getSignature",
+            "getNonCriticalExtensionOIDs",
+            "hasUnsupportedCriticalExtension",
+            "getSigAlgName",
+            "getSigAlgParams",
+            "getCriticalExtensionOIDs",
+            "loadCRLEntries",
+            "getExtensionValue",
+            "getEncoded",
+            "getNextUpdate",
+            "getRevokedCertificates",
+            "isRevoked",
+            "getIssuerX500Principal",
+            "getVersion",
+            "toString",
+            "getTBSCertList",
+            "getIssuerDN",
+            "getSigAlgOID",
+            "getRevokedCertificate",
+            "getExtensionOIDs"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/dh/KeyAgreementSpi",
+        "only_aosp_methods": [
+            "generatePrivateKeyParameter",
+            "generatePublicKeyParameter"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPrivateKey",
+        "only_aosp_methods": [
+            "toString",
+            "engineGetKeyParameters"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/dh/KeyPairGeneratorSpi",
+        "only_aosp_methods": [
+            "convertParams"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/asymmetric/dh/BCDHPublicKey",
+        "only_aosp_methods": [
+            "toString"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/config/ProviderConfiguration",
+        "only_aosp_methods": [
+            "getDSADefaultParameters"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/config/ConfigurableProvider",
+        "only_aosp_methods": [
+            "getKeyInfoConverter"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/keystore/pkcs12/PKCS12KeyStoreSpi",
+        "only_aosp_methods": [
+            "validateIterationCount",
+            "size",
+            "createSafeBag"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/keystore/bc/BcKeyStoreSpi",
+        "only_aosp_methods": [
+            "getCause"
+        ],
+        "only_oem_methods": [
+            "getBouncyCastleProvider"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/symmetric/GcmSpecUtil",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "lookup"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/symmetric/DES",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "engineGenerateParameters"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/symmetric/AES",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "lookup"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey",
+        "only_aosp_methods": [
+            "isDestroyed",
+            "checkDestroyed",
+            "destroy"
+        ],
+        "only_oem_methods": [
+            "getPbeKeySpec"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/symmetric/util/BaseBlockCipher",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "lookup",
+            "getCause"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher",
+        "only_aosp_methods": [
+            "erase",
+            "getBuf",
+            "getCause"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/provider/symmetric/util/BaseMac",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "lookup"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/util/DefaultJcaJceHelper",
+        "only_aosp_methods": [
+            "createExemptionMechanism",
+            "createCertStore",
+            "createMessageDigest",
+            "createCertPathBuilder",
+            "createCertPathValidator",
+            "createKeyStore"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/util/NamedJcaJceHelper",
+        "only_aosp_methods": [
+            "createExemptionMechanism",
+            "createCertStore",
+            "createMessageDigest",
+            "createCertPathBuilder",
+            "createCertPathValidator",
+            "createKeyStore"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/util/JcaJceHelper",
+        "only_aosp_methods": [
+            "createExemptionMechanism",
+            "createCertStore",
+            "createMessageDigest",
+            "createCertPathBuilder",
+            "createCertPathValidator",
+            "createKeyStore"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jcajce/util/ProviderJcaJceHelper",
+        "only_aosp_methods": [
+            "createExemptionMechanism",
+            "createCertStore",
+            "createMessageDigest",
+            "createCertPathBuilder",
+            "createCertPathValidator",
+            "createKeyStore"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/util/Arrays",
+        "only_aosp_methods": [
+            "clear",
+            "isNullOrContainsNull",
+            "areAllZeroes",
+            "isNullOrEmpty"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/util/Integers",
+        "only_aosp_methods": [
+            "numberOfLeadingZeros",
+            "numberOfTrailingZeros",
+            "reverseBytes",
+            "reverse"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/util/Pack",
+        "only_aosp_methods": [
+            "shortToBigEndian"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/util/Properties",
+        "only_aosp_methods": [
+            "isOverrideSetTo",
+            "setThreadOverride",
+            "getPropertyValue",
+            "removeThreadOverride",
+            "isSetTrue",
+            "asBigInteger",
+            "isSetFalse"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/util/BigIntegers",
+        "only_aosp_methods": [
+            "createRandomBigInteger",
+            "longValueExact",
+            "modOddInverseVar",
+            "createRandom",
+            "getUnsignedByteLength",
+            "intValueExact",
+            "modOddInverse",
+            "createRandomPrime"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/util/io/TeeInputStream",
+        "only_aosp_methods": [
+            "available"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/util/encoders/Hex",
+        "only_aosp_methods": [
+            "decodeStrict"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/util/encoders/HexEncoder",
+        "only_aosp_methods": [
+            "decodeStrict"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/WNafUtil",
+        "only_aosp_methods": [
+            "configureBasepoint",
+            "precomputeWithPointMap",
+            "checkTable",
+            "checkExisting"
+        ],
+        "only_oem_methods": [
+            "mapPointWithPrecomp"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/WTauNafMultiplier",
+        "only_aosp_methods": [
+            "precompute"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/WNafL2RMultiplier",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getWindowSize"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/ECPoint",
+        "only_aosp_methods": [
+            "implIsValid",
+            "isValidPartial",
+            "scaleXNegateY",
+            "scaleYNegateX",
+            "satisfiesOrder",
+            "precompute"
+        ],
+        "only_oem_methods": [
+            "satisfiesCofactor",
+            "isCompressed",
+            "getY",
+            "getX"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/ECFieldElement",
+        "only_aosp_methods": [
+            "halfTrace",
+            "trace",
+            "hasFastTrace"
+        ],
+        "only_oem_methods": [
+            "checkFieldElements"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/ECCurve",
+        "only_aosp_methods": [
+            "lookupVar",
+            "randomFieldElementMult",
+            "implRandomFieldElementMult",
+            "implRandomFieldElement",
+            "randomFieldElement",
+            "precompute",
+            "lookup",
+            "createCacheSafeLookupTable",
+            "getSize"
+        ],
+        "only_oem_methods": [
+            "setPreCompInfo",
+            "getH",
+            "getN"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/FixedPointUtil",
+        "only_aosp_methods": [
+            "checkTable",
+            "checkExisting"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/FixedPointPreCompInfo",
+        "only_aosp_methods": [
+            "setLookupTable",
+            "getLookupTable"
+        ],
+        "only_oem_methods": [
+            "getPreComp",
+            "setPreComp"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/AbstractECMultiplier",
+        "only_aosp_methods": [
+            "checkResult"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/FixedPointCombMultiplier",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getWidthForCombSize"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/ECAlgorithms",
+        "only_aosp_methods": [
+            "cleanPoint",
+            "implShamirsTrickFixedPoint",
+            "implCheckResult"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/WNafPreCompInfo",
+        "only_aosp_methods": [
+            "decrementPromotionCountdown",
+            "getWidth",
+            "setConfWidth",
+            "isPromoted",
+            "getConfWidth",
+            "getPromotionCountdown",
+            "setPromotionCountdown",
+            "setWidth"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/LongArray",
+        "only_aosp_methods": [
+            "copyTo"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/endo/GLVTypeBParameters",
+        "only_aosp_methods": [
+            "getSplitParams"
+        ],
+        "only_oem_methods": [
+            "getV1",
+            "getV2",
+            "checkVector"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/endo/GLVTypeBEndomorphism",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "calculateB"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP192K1Curve",
+        "only_aosp_methods": [
+            "lookupVar",
+            "randomFieldElementMult",
+            "createPoint",
+            "randomFieldElement",
+            "lookup",
+            "createCacheSafeLookupTable",
+            "getSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP224R1Curve",
+        "only_aosp_methods": [
+            "lookupVar",
+            "randomFieldElementMult",
+            "createPoint",
+            "randomFieldElement",
+            "lookup",
+            "createCacheSafeLookupTable",
+            "getSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP192R1Field",
+        "only_aosp_methods": [
+            "random",
+            "isZero",
+            "randomMult",
+            "inv"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP256K1Curve",
+        "only_aosp_methods": [
+            "lookupVar",
+            "randomFieldElementMult",
+            "createPoint",
+            "randomFieldElement",
+            "lookup",
+            "createCacheSafeLookupTable",
+            "getSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP521R1Field",
+        "only_aosp_methods": [
+            "random",
+            "isZero",
+            "randomMult",
+            "inv"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP521R1Curve",
+        "only_aosp_methods": [
+            "lookupVar",
+            "randomFieldElementMult",
+            "createPoint",
+            "randomFieldElement",
+            "lookup",
+            "createCacheSafeLookupTable",
+            "getSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP384R1Curve",
+        "only_aosp_methods": [
+            "lookupVar",
+            "randomFieldElementMult",
+            "createPoint",
+            "randomFieldElement",
+            "lookup",
+            "createCacheSafeLookupTable",
+            "getSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP256R1Curve",
+        "only_aosp_methods": [
+            "lookupVar",
+            "randomFieldElementMult",
+            "createPoint",
+            "randomFieldElement",
+            "lookup",
+            "createCacheSafeLookupTable",
+            "getSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP224K1Field",
+        "only_aosp_methods": [
+            "random",
+            "isZero",
+            "randomMult",
+            "inv"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP256K1Field",
+        "only_aosp_methods": [
+            "random",
+            "isZero",
+            "randomMult",
+            "inv"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP192R1Curve",
+        "only_aosp_methods": [
+            "lookupVar",
+            "randomFieldElementMult",
+            "createPoint",
+            "randomFieldElement",
+            "lookup",
+            "createCacheSafeLookupTable",
+            "getSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP224R1Field",
+        "only_aosp_methods": [
+            "random",
+            "isZero",
+            "randomMult",
+            "inv"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP192K1Field",
+        "only_aosp_methods": [
+            "random",
+            "isZero",
+            "randomMult",
+            "inv"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP384R1Field",
+        "only_aosp_methods": [
+            "random",
+            "isZero",
+            "randomMult",
+            "inv"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP224K1Curve",
+        "only_aosp_methods": [
+            "lookupVar",
+            "randomFieldElementMult",
+            "createPoint",
+            "randomFieldElement",
+            "lookup",
+            "createCacheSafeLookupTable",
+            "getSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/ec/custom/sec/SecP256R1Field",
+        "only_aosp_methods": [
+            "random",
+            "isZero",
+            "randomMult",
+            "inv"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/raw/Nat",
+        "only_aosp_methods": [
+            "diff",
+            "cadd",
+            "fromBigInteger64",
+            "lessThan",
+            "copy64",
+            "squareWordAddTo",
+            "compare",
+            "addToEachOther",
+            "csub",
+            "cmov",
+            "equalToZero",
+            "equalTo"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/math/raw/Mod",
+        "only_aosp_methods": [
+            "updateFG30",
+            "divsteps30",
+            "cnegate30",
+            "updateDE30",
+            "cnormalize30",
+            "encode30",
+            "checkedModOddInverseVar",
+            "modOddInverseVar",
+            "add30",
+            "negate30",
+            "checkedModOddInverse",
+            "decode30",
+            "getMaximumDivsteps",
+            "modOddInverse",
+            "divsteps30Var"
+        ],
+        "only_oem_methods": [
+            "inversionResult",
+            "inversionStep",
+            "getTrailingZeroes"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/ec/CustomNamedCurves",
+        "only_aosp_methods": [
+            "configureBasepoint"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/encodings/PKCS1Encoding",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "run"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/util/PublicKeyFactory",
+        "only_aosp_methods": [
+            "getRawKey",
+            "getPublicKeyParameters"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/util/PrivateKeyFactory",
+        "only_aosp_methods": [
+            "getRawKey"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/params/ECPublicKeyParameters",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "validate"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/params/DHPublicKeyParameters",
+        "only_aosp_methods": [
+            "legendre"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/params/ECDomainParameters",
+        "only_aosp_methods": [
+            "getHInv",
+            "validatePrivateScalar",
+            "validatePublicPoint"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/signers/DSASigner",
+        "only_aosp_methods": [
+            "getOrder"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/signers/ECDSASigner",
+        "only_aosp_methods": [
+            "getOrder"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/digests/NullDigest",
+        "only_aosp_methods": [
+            "copy"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/modes/AEADBlockCipher",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "doFinal",
+            "init",
+            "getMac",
+            "getAlgorithmName",
+            "processByte",
+            "processBytes",
+            "processAADBytes",
+            "getOutputSize",
+            "reset",
+            "getUpdateOutputSize",
+            "processAADByte"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/modes/GCMBlockCipher",
+        "only_aosp_methods": [
+            "processPartial",
+            "processBlock",
+            "getNextCTRBlock"
+        ],
+        "only_oem_methods": [
+            "gCTRPartial",
+            "gCTRBlock",
+            "getNextCounterBlock",
+            "outputBlock"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/modes/CCMBlockCipher",
+        "only_aosp_methods": [
+            "getMacSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/crypto/modes/gcm/GCMUtil",
+        "only_aosp_methods": [
+            "square",
+            "pAsLongs",
+            "multiplyP7",
+            "multiplyP4",
+            "divideP",
+            "copy",
+            "multiplyP3",
+            "implMul64"
+        ],
+        "only_oem_methods": [
+            "generateLookup",
+            "shiftRight",
+            "shiftRightN"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DLBitString",
+        "only_aosp_methods": [
+            "toDLObject"
+        ],
+        "only_oem_methods": [
+            "toByteArray"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1Set",
+        "only_aosp_methods": [
+            "hasMoreElements",
+            "nextElement"
+        ],
+        "only_oem_methods": [
+            "getNext"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1UTCTime",
+        "only_aosp_methods": [
+            "isDigit"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DLSequence",
+        "only_aosp_methods": [
+            "toDLObject"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1Sequence",
+        "only_aosp_methods": [
+            "hasMoreElements",
+            "nextElement",
+            "toArrayInternal"
+        ],
+        "only_oem_methods": [
+            "getNext"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/LazyEncodedSequence",
+        "only_aosp_methods": [
+            "iterator",
+            "toArrayInternal",
+            "toArray",
+            "force",
+            "hashCode"
+        ],
+        "only_oem_methods": [
+            "parse"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1Primitive",
+        "only_aosp_methods": [
+            "encodeTo"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1BitString",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "derForm"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1InputStream",
+        "only_aosp_methods": [
+            "readVector"
+        ],
+        "only_oem_methods": [
+            "buildEncodableVector",
+            "buildDEREncodableVector"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1OutputStream",
+        "only_aosp_methods": [
+            "flushInternal",
+            "writeEncodedIndef",
+            "writeElements",
+            "create",
+            "writePrimitive"
+        ],
+        "only_oem_methods": [
+            "writeImplicitObject",
+            "writeNull"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/BEROctetString",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getOctets",
+            "generateOcts"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DERBitString",
+        "only_aosp_methods": [
+            "toDLObject",
+            "toDERObject"
+        ],
+        "only_oem_methods": [
+            "toByteArray"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/BEROutputStream",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "writeObject"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DERTaggedObject",
+        "only_aosp_methods": [
+            "toDLObject",
+            "toDERObject"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DLOutputStream",
+        "only_aosp_methods": [
+            "writePrimitive",
+            "getDLSubStream"
+        ],
+        "only_oem_methods": [
+            "writeObject"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DLSet",
+        "only_aosp_methods": [
+            "toDLObject"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ConstructedOctetStream",
+        "only_aosp_methods": [
+            "getNextParser"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1TaggedObject",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "isEmpty"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DefiniteLengthInputStream",
+        "only_aosp_methods": [
+            "readAllIntoByteArray"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1EncodableVector",
+        "only_aosp_methods": [
+            "takeElements",
+            "cloneElements",
+            "copyElements",
+            "reallocate"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1ApplicationSpecific",
+        "only_aosp_methods": [
+            "toString"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1Boolean",
+        "only_aosp_methods": [
+            "toDERObject"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1GeneralizedTime",
+        "only_aosp_methods": [
+            "hasMinutes",
+            "toDLObject",
+            "isDigit",
+            "calculateGMTDateFormat",
+            "toDERObject",
+            "hasSeconds",
+            "pruneFractionalSeconds"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DERSet",
+        "only_aosp_methods": [
+            "toDLObject",
+            "checkSorted",
+            "toDERObject",
+            "convert"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DERSequence",
+        "only_aosp_methods": [
+            "toDLObject",
+            "toDERObject",
+            "convert"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DERExternal",
+        "only_aosp_methods": [
+            "toDLObject",
+            "toDERObject"
+        ],
+        "only_oem_methods": [
+            "asn1Equals",
+            "setIndirectReference",
+            "getExternalContent",
+            "setDataValueDescriptor",
+            "getDataValueDescriptor",
+            "setDirectReference",
+            "getDirectReference",
+            "setExternalContent",
+            "setEncoding",
+            "isConstructed",
+            "getEncoding",
+            "getObjFromVector",
+            "getIndirectReference",
+            "hashCode"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DEROutputStream",
+        "only_aosp_methods": [
+            "writePrimitive"
+        ],
+        "only_oem_methods": [
+            "writeObject"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DERGeneralizedTime",
+        "only_aosp_methods": [
+            "getDERTime",
+            "encode",
+            "toDLObject",
+            "toDERObject",
+            "encodedLength"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1Integer",
+        "only_aosp_methods": [
+            "hasValue",
+            "intPositiveValueExact",
+            "signBytesToSkip",
+            "intValue",
+            "longValueExact",
+            "intValueExact",
+            "isMalformed",
+            "longValue"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1Object",
+        "only_aosp_methods": [
+            "encodeTo"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/LimitedInputStream",
+        "only_aosp_methods": [
+            "getLimit"
+        ],
+        "only_oem_methods": [
+            "getRemaining"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DEROctetString",
+        "only_aosp_methods": [
+            "toDLObject",
+            "toDERObject"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/DLTaggedObject",
+        "only_aosp_methods": [
+            "toDLObject"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/ASN1Enumerated",
+        "only_aosp_methods": [
+            "hasValue",
+            "intValueExact"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe",
+        "only_aosp_methods": [
+            "copy"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/pkcs/PrivateKeyInfo",
+        "only_aosp_methods": [
+            "hasPublicKey",
+            "getPublicKeyData",
+            "getVersion",
+            "parsePublicKey",
+            "getVersionValue"
+        ],
+        "only_oem_methods": [
+            "getAlgorithmId"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/x509/ExtensionsGenerator",
+        "only_aosp_methods": [
+            "removeExtension",
+            "replaceExtension",
+            "getExtension",
+            "hasExtension"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/x509/CRLDistPoint",
+        "only_aosp_methods": [
+            "fromExtensions"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/x509/GeneralNames",
+        "only_aosp_methods": [
+            "copy"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/x509/PKIXNameConstraintValidator",
+        "only_aosp_methods": [
+            "otherNameIsConstrained",
+            "intersectOtherName",
+            "unionOtherName",
+            "stringifyOtherNameCollection",
+            "addLine",
+            "checkExcludedOtherName",
+            "checkPermittedOtherName"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/x509/Extension",
+        "only_aosp_methods": [
+            "create"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/x500/RDN",
+        "only_aosp_methods": [
+            "containsAttributeType",
+            "collectAttributeTypes"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/x500/style/IETFUtils",
+        "only_aosp_methods": [
+            "canonicalString"
+        ],
+        "only_oem_methods": [
+            "bytesToString"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/x9/X962NamedCurves",
+        "only_aosp_methods": [
+            "fromHex",
+            "configureCurve",
+            "configureBasepoint"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/x9/X9ECParameters",
+        "only_aosp_methods": [
+            "hasSeed"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/asn1/sec/SECNamedCurves",
+        "only_aosp_methods": [
+            "configureBasepoint"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jce/provider/BouncyCastleProvider",
+        "only_aosp_methods": [
+            "getKeyInfoConverter"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jce/provider/PKIXNameConstraintValidator",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "intersectIPRange",
+            "intersectURI",
+            "intersectDN",
+            "intersectDNS",
+            "extractNameAsString",
+            "isIPConstrained",
+            "checkPermittedURI",
+            "emailIsConstrained",
+            "withinDomain",
+            "checkPermittedIP",
+            "unionIP",
+            "unionDNS",
+            "intersectIP",
+            "extractIPsAndSubnetMasks",
+            "compareTo",
+            "checkPermittedDNS",
+            "stringifyIP",
+            "checkExcludedURI",
+            "stringifyIPCollection",
+            "checkExcludedIP",
+            "unionEmail",
+            "intersectEmail",
+            "ipWithSubnetMask",
+            "hashCollection",
+            "max",
+            "minMaxIPs",
+            "extractHostFromURL",
+            "checkPermittedEmail",
+            "min",
+            "unionURI",
+            "collectionsAreEqual",
+            "isUriConstrained",
+            "checkExcludedEmail",
+            "or",
+            "unionDN",
+            "withinDNSubtree",
+            "checkExcludedDNS",
+            "unionIPRange"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jce/provider/PKIXCertPathValidatorSpi",
+        "only_aosp_methods": [
+            "checkCertificate"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jce/provider/CertPathValidatorUtilities",
+        "only_aosp_methods": [
+            "findTargets",
+            "isIssuerTrustAnchor",
+            "getValidityDate"
+        ],
+        "only_oem_methods": [
+            "getValidDate"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jce/provider/RFC3280CertPathUtilities",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "processCRLA1ii",
+            "processCRLA1i"
+        ]
+    },
+    {
+        "class_name": "android/org/bouncycastle/jce/provider/BouncyCastleProviderConfiguration",
+        "only_aosp_methods": [
+            "getDSADefaultParameters"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jce/provider/PKIXNameConstraintValidatorException",
+        "only_aosp_methods": [
+            "getCause"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jce/provider/PrincipalUtils",
+        "only_aosp_methods": [
+            "getEncoded",
+            "getX500Name",
+            "notNull"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/bouncycastle/jce/spec/ECNamedCurveSpec",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "convertPoint"
+        ]
+    }
+]

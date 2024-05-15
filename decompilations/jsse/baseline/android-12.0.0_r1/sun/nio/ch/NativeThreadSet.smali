@@ -1,0 +1,386 @@
+.class Lsun/nio/ch/NativeThreadSet;
+.super Ljava/lang/Object;
+.source "NativeThreadSet.java"
+
+
+# static fields
+.field static final synthetic blacklist $assertionsDisabled:Z
+
+
+# instance fields
+.field private blacklist elts:[J
+
+.field private blacklist used:I
+
+.field private blacklist waitingToEmpty:Z
+
+
+# direct methods
+.method static constructor blacklist <clinit>()V
+    .registers 0
+
+    .line 32
+    return-void
+.end method
+
+.method constructor blacklist <init>(I)V
+    .registers 3
+    .param p1, "n"    # I
+
+    .line 38
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 35
+    const/4 v0, 0x0
+
+    iput v0, p0, Lsun/nio/ch/NativeThreadSet;->used:I
+
+    .line 39
+    new-array v0, p1, [J
+
+    iput-object v0, p0, Lsun/nio/ch/NativeThreadSet;->elts:[J
+
+    .line 40
+    return-void
+.end method
+
+
+# virtual methods
+.method blacklist add()I
+    .registers 11
+
+    .line 46
+    invoke-static {}, Lsun/nio/ch/NativeThread;->current()J
+
+    move-result-wide v0
+
+    .line 48
+    .local v0, "th":J
+    const-wide/16 v2, 0x0
+
+    cmp-long v4, v0, v2
+
+    if-nez v4, :cond_c
+
+    .line 49
+    const-wide/16 v0, -0x1
+
+    .line 50
+    :cond_c
+    monitor-enter p0
+
+    .line 51
+    const/4 v4, 0x0
+
+    .line 52
+    .local v4, "start":I
+    :try_start_e
+    iget v5, p0, Lsun/nio/ch/NativeThreadSet;->used:I
+
+    iget-object v6, p0, Lsun/nio/ch/NativeThreadSet;->elts:[J
+
+    array-length v7, v6
+
+    if-lt v5, v7, :cond_21
+
+    .line 53
+    array-length v5, v6
+
+    .line 54
+    .local v5, "on":I
+    mul-int/lit8 v7, v5, 0x2
+
+    .line 55
+    .local v7, "nn":I
+    new-array v8, v7, [J
+
+    .line 56
+    .local v8, "nelts":[J
+    const/4 v9, 0x0
+
+    invoke-static {v6, v9, v8, v9, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 57
+    iput-object v8, p0, Lsun/nio/ch/NativeThreadSet;->elts:[J
+
+    .line 58
+    move v4, v5
+
+    .line 60
+    .end local v5    # "on":I
+    .end local v7    # "nn":I
+    .end local v8    # "nelts":[J
+    :cond_21
+    move v5, v4
+
+    .local v5, "i":I
+    :goto_22
+    iget-object v6, p0, Lsun/nio/ch/NativeThreadSet;->elts:[J
+
+    array-length v7, v6
+
+    if-ge v5, v7, :cond_3a
+
+    .line 61
+    aget-wide v7, v6, v5
+
+    cmp-long v7, v7, v2
+
+    if-nez v7, :cond_37
+
+    .line 62
+    aput-wide v0, v6, v5
+
+    .line 63
+    iget v2, p0, Lsun/nio/ch/NativeThreadSet;->used:I
+
+    add-int/lit8 v2, v2, 0x1
+
+    iput v2, p0, Lsun/nio/ch/NativeThreadSet;->used:I
+
+    .line 64
+    monitor-exit p0
+
+    return v5
+
+    .line 60
+    :cond_37
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_22
+
+    .line 67
+    .end local v5    # "i":I
+    :cond_3a
+    nop
+
+    .line 68
+    const/4 v2, -0x1
+
+    monitor-exit p0
+
+    return v2
+
+    .line 69
+    .end local v4    # "start":I
+    :catchall_3e
+    move-exception v2
+
+    monitor-exit p0
+    :try_end_40
+    .catchall {:try_start_e .. :try_end_40} :catchall_3e
+
+    throw v2
+.end method
+
+.method blacklist remove(I)V
+    .registers 5
+    .param p1, "i"    # I
+
+    .line 75
+    monitor-enter p0
+
+    .line 76
+    :try_start_1
+    iget-object v0, p0, Lsun/nio/ch/NativeThreadSet;->elts:[J
+
+    const-wide/16 v1, 0x0
+
+    aput-wide v1, v0, p1
+
+    .line 77
+    iget v0, p0, Lsun/nio/ch/NativeThreadSet;->used:I
+
+    add-int/lit8 v0, v0, -0x1
+
+    iput v0, p0, Lsun/nio/ch/NativeThreadSet;->used:I
+
+    .line 78
+    if-nez v0, :cond_16
+
+    iget-boolean v0, p0, Lsun/nio/ch/NativeThreadSet;->waitingToEmpty:Z
+
+    if-eqz v0, :cond_16
+
+    .line 79
+    invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
+
+    .line 80
+    :cond_16
+    monitor-exit p0
+
+    .line 81
+    return-void
+
+    .line 80
+    :catchall_18
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_1a
+    .catchall {:try_start_1 .. :try_end_1a} :catchall_18
+
+    throw v0
+.end method
+
+.method declared-synchronized blacklist signalAndWait()V
+    .registers 9
+
+    monitor-enter p0
+
+    .line 86
+    const/4 v0, 0x0
+
+    .line 87
+    .local v0, "interrupted":Z
+    :goto_2
+    :try_start_2
+    iget v1, p0, Lsun/nio/ch/NativeThreadSet;->used:I
+
+    if-lez v1, :cond_3d
+
+    .line 88
+    nop
+
+    .line 89
+    .local v1, "u":I
+    iget-object v2, p0, Lsun/nio/ch/NativeThreadSet;->elts:[J
+
+    array-length v2, v2
+
+    .line 90
+    .local v2, "n":I
+    const/4 v3, 0x0
+
+    .local v3, "i":I
+    :goto_b
+    if-ge v3, v2, :cond_29
+
+    .line 91
+    iget-object v4, p0, Lsun/nio/ch/NativeThreadSet;->elts:[J
+
+    aget-wide v4, v4, v3
+
+    .line 92
+    .local v4, "th":J
+    const-wide/16 v6, 0x0
+
+    cmp-long v6, v4, v6
+
+    if-nez v6, :cond_18
+
+    .line 93
+    goto :goto_26
+
+    .line 94
+    :cond_18
+    const-wide/16 v6, -0x1
+
+    cmp-long v6, v4, v6
+
+    if-eqz v6, :cond_21
+
+    .line 95
+    invoke-static {v4, v5}, Lsun/nio/ch/NativeThread;->signal(J)V
+
+    .line 96
+    .end local p0    # "this":Lsun/nio/ch/NativeThreadSet;
+    :cond_21
+    add-int/lit8 v1, v1, -0x1
+
+    if-nez v1, :cond_26
+
+    .line 97
+    goto :goto_29
+
+    .line 90
+    .end local v4    # "th":J
+    :cond_26
+    :goto_26
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_b
+
+    .line 99
+    .end local v3    # "i":I
+    :cond_29
+    :goto_29
+    const/4 v3, 0x1
+
+    iput-boolean v3, p0, Lsun/nio/ch/NativeThreadSet;->waitingToEmpty:Z
+    :try_end_2c
+    .catchall {:try_start_2 .. :try_end_2c} :catchall_48
+
+    .line 101
+    const-wide/16 v3, 0x32
+
+    const/4 v5, 0x0
+
+    :try_start_2f
+    invoke-virtual {p0, v3, v4}, Ljava/lang/Object;->wait(J)V
+    :try_end_32
+    .catch Ljava/lang/InterruptedException; {:try_start_2f .. :try_end_32} :catch_39
+    .catchall {:try_start_2f .. :try_end_32} :catchall_35
+
+    .line 105
+    :goto_32
+    :try_start_32
+    iput-boolean v5, p0, Lsun/nio/ch/NativeThreadSet;->waitingToEmpty:Z
+
+    .line 106
+    goto :goto_3c
+
+    .line 105
+    :catchall_35
+    move-exception v3
+
+    iput-boolean v5, p0, Lsun/nio/ch/NativeThreadSet;->waitingToEmpty:Z
+
+    .line 106
+    throw v3
+
+    .line 102
+    :catch_39
+    move-exception v3
+
+    .line 103
+    .local v3, "e":Ljava/lang/InterruptedException;
+    const/4 v0, 0x1
+
+    goto :goto_32
+
+    .line 107
+    .end local v1    # "u":I
+    .end local v2    # "n":I
+    .end local v3    # "e":Ljava/lang/InterruptedException;
+    :goto_3c
+    goto :goto_2
+
+    .line 108
+    :cond_3d
+    if-eqz v0, :cond_46
+
+    .line 109
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
+    :try_end_46
+    .catchall {:try_start_32 .. :try_end_46} :catchall_48
+
+    .line 110
+    :cond_46
+    monitor-exit p0
+
+    return-void
+
+    .line 85
+    .end local v0    # "interrupted":Z
+    :catchall_48
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method

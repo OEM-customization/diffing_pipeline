@@ -1,0 +1,1075 @@
+[
+    {
+        "class_name": "net/ssl/HttpsURLConnection",
+        "only_aosp_methods": [
+            "getStrictHostnameVerifier"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "net/ssl/SSLSocket",
+        "only_aosp_methods": [
+            "getHandshakeApplicationProtocol",
+            "getApplicationProtocol",
+            "getHandshakeApplicationProtocolSelector",
+            "setHandshakeApplicationProtocolSelector"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "net/ssl/SSLEngine",
+        "only_aosp_methods": [
+            "getHandshakeApplicationProtocol",
+            "getApplicationProtocol",
+            "getHandshakeApplicationProtocolSelector",
+            "setHandshakeApplicationProtocolSelector"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "net/ssl/SSLParameters",
+        "only_aosp_methods": [
+            "getApplicationProtocols",
+            "setApplicationProtocols"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "crypto/ExemptionMechanism",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "finalize"
+        ]
+    },
+    {
+        "class_name": "invoke/util/VerifyAccess",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "loadersAreRelated",
+            "classLoaderIsAncestor",
+            "isTypeVisible",
+            "getPackageName"
+        ]
+    },
+    {
+        "class_name": "security/jca/Providers",
+        "only_aosp_methods": [
+            "setMaximumAllowableApiLevelForBcDeprecation",
+            "checkBouncyCastleDeprecation",
+            "getMaximumAllowableApiLevelForBcDeprecation"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/ch/Util",
+        "only_aosp_methods": [
+            "run",
+            "getMaxCachedBufferSize",
+            "isBufferTooLarge"
+        ],
+        "only_oem_methods": [
+            "pageSize"
+        ]
+    },
+    {
+        "class_name": "nio/ch/PollSelectorProvider",
+        "only_aosp_methods": [
+            "inheritedChannel"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/ch/ThreadPool",
+        "only_aosp_methods": [
+            "newThread"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/ch/FileDispatcherImpl",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "preCloseImpl"
+        ]
+    },
+    {
+        "class_name": "reflect/Reflection",
+        "only_aosp_methods": [
+            "getCallerClass"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "reflect/misc/ReflectUtil",
+        "only_aosp_methods": [
+            "ensureMemberAccess"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "io/ObjectInputStream",
+        "only_aosp_methods": [
+            "getBytesRead"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "io/ObjectStreamClass",
+        "only_aosp_methods": [
+            "warnDefaultSUIDTargetVersionDependent",
+            "requireInitialized"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "io/FileInputStream",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "open0",
+            "open"
+        ]
+    },
+    {
+        "class_name": "io/FileOutputStream",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "open0",
+            "open"
+        ]
+    },
+    {
+        "class_name": "io/RandomAccessFile",
+        "only_aosp_methods": [
+            "maybeSync"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "io/FileDescriptor",
+        "only_aosp_methods": [
+            "cloneForFork",
+            "getOwnerId$",
+            "release$",
+            "setOwnerId$"
+        ],
+        "only_oem_methods": [
+            "dupFd"
+        ]
+    },
+    {
+        "class_name": "io/UnixFileSystem",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getLength0",
+            "delete0",
+            "rename0",
+            "checkAccess0"
+        ]
+    },
+    {
+        "class_name": "security/SecureRandom",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getInstanceFromCryptoProvider",
+            "getSdkTargetForCryptoProviderWorkaround",
+            "setSdkTargetForCryptoProviderWorkaround"
+        ]
+    },
+    {
+        "class_name": "util/Collections",
+        "only_aosp_methods": [
+            "accept",
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/Locale",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "adjustLanguageCode"
+        ]
+    },
+    {
+        "class_name": "util/PrimitiveIterator",
+        "only_aosp_methods": [
+            "accept"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/Objects",
+        "only_aosp_methods": [
+            "checkFromIndexSize",
+            "checkFromToIndex",
+            "requireNonNullElseGet",
+            "requireNonNullElse",
+            "checkIndex"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/Arrays",
+        "only_aosp_methods": [
+            "accept"
+        ],
+        "only_oem_methods": [
+            "checkOffsetAndCount"
+        ]
+    },
+    {
+        "class_name": "util/Set",
+        "only_aosp_methods": [
+            "of",
+            "copyOf"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/AbstractList",
+        "only_aosp_methods": [
+            "checkAbstractListModCount",
+            "subListRangeCheck",
+            "updateSizeAndModCount",
+            "size",
+            "characteristics",
+            "tryAdvance",
+            "trySplit",
+            "getFence",
+            "forEachRemaining",
+            "estimateSize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/Map",
+        "only_aosp_methods": [
+            "of",
+            "compare",
+            "ofEntries",
+            "entry",
+            "copyOf"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/BitSet",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "next",
+            "forEachRemaining"
+        ]
+    },
+    {
+        "class_name": "util/Tripwire",
+        "only_aosp_methods": [
+            "run"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/List",
+        "only_aosp_methods": [
+            "of",
+            "copyOf"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/regex/Matcher",
+        "only_aosp_methods": [
+            "getSubSequence",
+            "getTextLength"
+        ],
+        "only_oem_methods": [
+            "lookingAtImpl",
+            "openImpl",
+            "getMatchedGroupIndex0",
+            "requireEndImpl",
+            "setInputImpl",
+            "findNextImpl",
+            "nativeSize",
+            "hitEndImpl",
+            "useAnchoringBoundsImpl",
+            "useTransparentBoundsImpl",
+            "matchesImpl",
+            "groupCountImpl",
+            "findImpl",
+            "getNativeFinalizer"
+        ]
+    },
+    {
+        "class_name": "util/regex/Pattern",
+        "only_aosp_methods": [
+            "test"
+        ],
+        "only_oem_methods": [
+            "getNativeFinalizer",
+            "nativeSize",
+            "compileImpl"
+        ]
+    },
+    {
+        "class_name": "util/concurrent/ConcurrentSkipListMap",
+        "only_aosp_methods": [
+            "compare"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/concurrent/ConcurrentMap",
+        "only_aosp_methods": [
+            "accept"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/concurrent/atomic/AtomicIntegerFieldUpdater",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "run"
+        ]
+    },
+    {
+        "class_name": "util/prefs/XmlSupport",
+        "only_aosp_methods": [
+            "item",
+            "elementNodesOf",
+            "getLength"
+        ],
+        "only_oem_methods": [
+            "getChildElements"
+        ]
+    },
+    {
+        "class_name": "util/prefs/Preferences",
+        "only_aosp_methods": [
+            "factory"
+        ],
+        "only_oem_methods": [
+            "findPreferencesFactory"
+        ]
+    },
+    {
+        "class_name": "util/function/BinaryOperator",
+        "only_aosp_methods": [
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/function/UnaryOperator",
+        "only_aosp_methods": [
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/Collectors",
+        "only_aosp_methods": [
+            "get",
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/DoublePipeline",
+        "only_aosp_methods": [
+            "applyAsDouble",
+            "applyAsLong",
+            "apply",
+            "get"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/DistinctOps",
+        "only_aosp_methods": [
+            "get"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/SliceOps",
+        "only_aosp_methods": [
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/IntPipeline",
+        "only_aosp_methods": [
+            "applyAsInt",
+            "get",
+            "applyAsLong",
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/StreamSpliterators",
+        "only_aosp_methods": [
+            "getAsBoolean"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/LongPipeline",
+        "only_aosp_methods": [
+            "get",
+            "applyAsLong",
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/DoubleStream",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "next",
+            "forEachRemaining"
+        ]
+    },
+    {
+        "class_name": "util/stream/ReferencePipeline",
+        "only_aosp_methods": [
+            "applyAsLong",
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/ForEachOps",
+        "only_aosp_methods": [
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/Nodes",
+        "only_aosp_methods": [
+            "apply"
+        ],
+        "only_oem_methods": [
+            "newArray"
+        ]
+    },
+    {
+        "class_name": "util/stream/FindOps",
+        "only_aosp_methods": [
+            "test"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/MatchOps",
+        "only_aosp_methods": [
+            "get"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/Node",
+        "only_aosp_methods": [
+            "accept"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/AbstractPipeline",
+        "only_aosp_methods": [
+            "get",
+            "apply"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "util/stream/IntStream",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "next",
+            "forEachRemaining"
+        ]
+    },
+    {
+        "class_name": "util/stream/LongStream",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "next",
+            "forEachRemaining"
+        ]
+    },
+    {
+        "class_name": "util/stream/Tripwire",
+        "only_aosp_methods": [
+            "run"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "net/InetAddress",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getAllByName0",
+            "parseNumericAddressNoThrow",
+            "disallowDeprecatedFormats"
+        ]
+    },
+    {
+        "class_name": "net/DatagramSocket",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "setNetworkInterface"
+        ]
+    },
+    {
+        "class_name": "net/AbstractPlainSocketImpl",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "setFileDescriptor"
+        ]
+    },
+    {
+        "class_name": "net/URL",
+        "only_aosp_methods": [
+            "fabricateNewURL",
+            "isBuiltinStreamHandler",
+            "resetState",
+            "setSerializedHashCode",
+            "createBuiltinHandlerClassNames",
+            "createBuiltinHandler",
+            "setDeserializedFields",
+            "readResolve"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/Instant",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/MonthDay",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/YearMonth",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/OffsetDateTime",
+        "only_aosp_methods": [
+            "$r8$lambda$OESTkflOrxF5tQIfcNoGdUDgOBs",
+            "compare",
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/LocalTime",
+        "only_aosp_methods": [
+            "ofInstant",
+            "queryFrom",
+            "toEpochSecond"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/LocalDate",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/Year",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/ZonedDateTime",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": [
+            "compareTo"
+        ]
+    },
+    {
+        "class_name": "time/LocalDateTime",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/Duration",
+        "only_aosp_methods": [
+            "toNanosPart",
+            "toMillisPart",
+            "toBigDecimalSeconds",
+            "toHoursPart",
+            "toDaysPart",
+            "truncatedTo",
+            "toMinutesPart",
+            "toSecondsPart"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/OffsetTime",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/chrono/ChronoLocalDateImpl",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "compareTo"
+        ]
+    },
+    {
+        "class_name": "time/chrono/JapaneseDate",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "compareTo"
+        ]
+    },
+    {
+        "class_name": "time/chrono/ThaiBuddhistDate",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "compareTo"
+        ]
+    },
+    {
+        "class_name": "time/chrono/JapaneseEra",
+        "only_aosp_methods": [
+            "getDisplayName"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/chrono/HijrahDate",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "compareTo"
+        ]
+    },
+    {
+        "class_name": "time/chrono/MinguoDate",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "compareTo"
+        ]
+    },
+    {
+        "class_name": "time/chrono/AbstractChronology",
+        "only_aosp_methods": [
+            "compare"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/chrono/ChronoZonedDateTimeImpl",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "minus",
+            "compareTo"
+        ]
+    },
+    {
+        "class_name": "time/chrono/ChronoLocalDateTimeImpl",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "minus",
+            "compareTo"
+        ]
+    },
+    {
+        "class_name": "time/temporal/TemporalAdjusters",
+        "only_aosp_methods": [
+            "adjustInto"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/temporal/TemporalQueries",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/format/DateTimeFormatterBuilder",
+        "only_aosp_methods": [
+            "accept",
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/format/DateTimeFormatter",
+        "only_aosp_methods": [
+            "queryFrom"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/format/ZoneName",
+        "only_aosp_methods": [
+            "getSystemCanonicalID"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "time/zone/IcuZoneRulesProvider",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "toZoneOffsetTransitionRule",
+            "verify",
+            "millisToOffset"
+        ]
+    },
+    {
+        "class_name": "lang/String",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "fastIndexOf"
+        ]
+    },
+    {
+        "class_name": "lang/Enum",
+        "only_aosp_methods": [
+            "enumValues"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/Class",
+        "only_aosp_methods": [
+            "getPrimitiveClass",
+            "getPackageName"
+        ],
+        "only_oem_methods": [
+            "getPackageName$"
+        ]
+    },
+    {
+        "class_name": "lang/Deprecated",
+        "only_aosp_methods": [
+            "since",
+            "forRemoval"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/Thread",
+        "only_aosp_methods": [
+            "setSystemDaemon",
+            "interrupt0",
+            "setPriority0",
+            "setNativeName"
+        ],
+        "only_oem_methods": [
+            "nativeInterrupt",
+            "nativeSetName",
+            "nativeSetPriority",
+            "parkFor$",
+            "unpark$",
+            "parkUntil$",
+            "nativeHoldsLock"
+        ]
+    },
+    {
+        "class_name": "lang/Short",
+        "only_aosp_methods": [
+            "compareUnsigned"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/Byte",
+        "only_aosp_methods": [
+            "compareUnsigned"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/Math",
+        "only_aosp_methods": [
+            "multiplyHigh",
+            "multiplyFull"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/Runtime",
+        "only_aosp_methods": [
+            "nativeGc"
+        ],
+        "only_oem_methods": [
+            "doLoad"
+        ]
+    },
+    {
+        "class_name": "lang/ClassLoader",
+        "only_aosp_methods": [
+            "getClassLoader"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/CharSequence",
+        "only_aosp_methods": [
+            "get"
+        ],
+        "only_oem_methods": [
+            "next"
+        ]
+    },
+    {
+        "class_name": "lang/Void",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "lookupType"
+        ]
+    },
+    {
+        "class_name": "lang/StrictMath",
+        "only_aosp_methods": [
+            "multiplyHigh",
+            "multiplyFull"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/invoke/MethodHandles",
+        "only_aosp_methods": [
+            "varHandleInvoker",
+            "findFieldOfType",
+            "arrayElementVarHandle",
+            "byteArrayViewVarHandle",
+            "byteBufferViewVarHandle",
+            "findVarHandle",
+            "varHandleExactInvoker",
+            "findStaticVarHandle",
+            "findVirtualForVH",
+            "unreflectVarHandle",
+            "checkTypeIsViewable",
+            "methodHandleForVarHandleAccessor",
+            "commonFieldChecks",
+            "checkClassIsArray"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/invoke/Transformers",
+        "only_aosp_methods": [
+            "badCast"
+        ],
+        "only_oem_methods": [
+            "explicitCastToBoolean",
+            "explicitCastFromBoolean"
+        ]
+    },
+    {
+        "class_name": "lang/invoke/MethodType",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "invokerType",
+            "basicType"
+        ]
+    },
+    {
+        "class_name": "lang/invoke/MethodHandle",
+        "only_aosp_methods": [
+            "standardString",
+            "asTypeUncached"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/ref/Reference",
+        "only_aosp_methods": [
+            "reachabilityFence",
+            "refersTo",
+            "finalize",
+            "refersTo0"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "lang/reflect/Proxy",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "reserved1",
+            "reserved2"
+        ]
+    },
+    {
+        "class_name": "lang/reflect/Field",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getDexFieldIndex"
+        ]
+    },
+    {
+        "class_name": "text/Normalizer",
+        "only_aosp_methods": [
+            "get"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "text/SimpleDateFormat",
+        "only_aosp_methods": [
+            "getExtendedTimeZoneNames",
+            "getDateTimeFormat",
+            "getDisplayNamesMap",
+            "applyPatternImpl"
+        ],
+        "only_oem_methods": [
+            "isGregorianCalendar",
+            "getCalendarName"
+        ]
+    },
+    {
+        "class_name": "text/DecimalFormat",
+        "only_aosp_methods": [
+            "initPattern"
+        ],
+        "only_oem_methods": [
+            "init"
+        ]
+    },
+    {
+        "class_name": "nio/Bits",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "copyToIntArray",
+            "copyToLongArray",
+            "copyFromArray",
+            "copyFromIntArray",
+            "copyToShortArray",
+            "reserveMemory",
+            "copyToCharArray",
+            "unreserveMemory",
+            "copyFromLongArray",
+            "copyToArray",
+            "copyFromCharArray",
+            "copyFromShortArray"
+        ]
+    },
+    {
+        "class_name": "nio/ShortBuffer",
+        "only_aosp_methods": [
+            "mark",
+            "position",
+            "limit",
+            "reset",
+            "clear",
+            "flip",
+            "rewind"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/DoubleBuffer",
+        "only_aosp_methods": [
+            "mark",
+            "position",
+            "limit",
+            "reset",
+            "clear",
+            "flip",
+            "rewind"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/CharBuffer",
+        "only_aosp_methods": [
+            "mark",
+            "position",
+            "limit",
+            "reset",
+            "clear",
+            "flip",
+            "rewind"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/FloatBuffer",
+        "only_aosp_methods": [
+            "mark",
+            "position",
+            "limit",
+            "reset",
+            "clear",
+            "flip",
+            "rewind"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/LongBuffer",
+        "only_aosp_methods": [
+            "mark",
+            "position",
+            "limit",
+            "reset",
+            "clear",
+            "flip",
+            "rewind"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/IntBuffer",
+        "only_aosp_methods": [
+            "mark",
+            "position",
+            "limit",
+            "reset",
+            "clear",
+            "flip",
+            "rewind"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/ByteBuffer",
+        "only_aosp_methods": [
+            "mark",
+            "position",
+            "limit",
+            "reset",
+            "clear",
+            "flip",
+            "rewind"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "nio/file/Files",
+        "only_aosp_methods": [
+            "test",
+            "apply"
+        ],
+        "only_oem_methods": []
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "class_name": "security/KeyStore",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "containsUniquePrivateKey",
+            "list",
+            "getCSR",
+            "retrieveUniquePrivateKeyAlias"
+        ]
+    },
+    {
+        "class_name": "security/KeyStoreSpi",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "engineContainsUniquePrivateKey",
+            "engineList",
+            "engineRetrieveUniquePrivateKeyAlias",
+            "engineGetCSR"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "class_name": "android/okhttp/internal/Util",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getEffectivePort",
+            "getDefaultPort"
+        ]
+    },
+    {
+        "class_name": "android/okhttp/internal/tls/OkHostnameVerifier",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "isPrintableAscii"
+        ]
+    },
+    {
+        "class_name": "android/okhttp/internal/io/RealConnection",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getAllByName",
+            "getIPStyle",
+            "matchIPver",
+            "setMainSocketDestIP",
+            "getProxy",
+            "extremeConditionConnect",
+            "setLogger",
+            "updateRequest",
+            "setSoTimeout",
+            "isSameProxy",
+            "bBothInfAvail",
+            "setMultiSocketInputStream",
+            "isSSLSocket",
+            "sampleRequestConnect",
+            "setSocket",
+            "connectTlsForSecChunk",
+            "close",
+            "setTagUid",
+            "getLocalAddr",
+            "extremeConditionConnectInternal",
+            "isValidSocketForMultiRAT",
+            "setMainTimeout",
+            "isMultiSocket",
+            "isExcluded"
+        ]
+    },
+    {
+        "class_name": "android/okhttp/okio/Buffer",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "readFromBuffer"
+        ]
+    },
+    {
+        "class_name": "android/okhttp/okio/RealBufferedSource",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "readFromBuffer"
+        ]
+    },
+    {
+        "class_name": "android/okhttp/okio/BufferedSource",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "readFromBuffer"
+        ]
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "class_name": "android/okhttp/internal/Platform",
+        "only_aosp_methods": [
+            "isPlatformSocket",
+            "getProtocolIds"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/okhttp/internal/tls/OkHostnameVerifier",
+        "only_aosp_methods": [
+            "isPrintableAscii",
+            "strictInstance"
+        ],
+        "only_oem_methods": []
+    }
+]

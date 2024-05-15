@@ -1,0 +1,455 @@
+[
+    {
+        "class_name": "android/org/conscrypt/TrustManagerImpl",
+        "only_aosp_methods": [
+            "getDefaultHostnameVerifier",
+            "checkBlocklist",
+            "getHostnameVerifier",
+            "setDefaultHostnameVerifier",
+            "setHostnameVerifier",
+            "getHttpsVerifier"
+        ],
+        "only_oem_methods": [
+            "isUserAddedCertificate",
+            "checkBlacklist"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/ConscryptEngine",
+        "only_aosp_methods": [
+            "getApplicationProtocols",
+            "sendSSLShutdown",
+            "closeAndFreeResources",
+            "newSslExceptionWithMessage",
+            "provideAfterHandshakeSession",
+            "getTlsUnique",
+            "setDefaultBufferAllocator",
+            "getHandshakeApplicationProtocol",
+            "serverCertificateRequested",
+            "setApplicationProtocols",
+            "provideHandshakeSession",
+            "provideSession",
+            "selectApplicationProtocol",
+            "exportKeyingMaterial",
+            "setApplicationProtocolSelector",
+            "freeIfDone",
+            "transitionTo",
+            "getDefaultBufferAllocator",
+            "getApplicationProtocol"
+        ],
+        "only_oem_methods": [
+            "free",
+            "getHandshakeSession",
+            "getAlpnSelectedProtocol",
+            "shutdown",
+            "setAlpnProtocols",
+            "shutdownWithError",
+            "shutdownAndFreeSslNative"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/Conscrypt",
+        "only_aosp_methods": [
+            "getApplicationProtocols",
+            "patch",
+            "verify",
+            "getDefaultHostnameVerifier",
+            "setName",
+            "getTlsUnique",
+            "setDefaultHostnameVerifier",
+            "setHostnameVerifier",
+            "wrapHostnameVerifier",
+            "setDefaultBufferAllocator",
+            "newProviderBuilder",
+            "getHostnameVerifier",
+            "major",
+            "provideTrustManager",
+            "setApplicationProtocols",
+            "minor",
+            "exportKeyingMaterial",
+            "defaultTlsProtocol",
+            "setApplicationProtocolSelector",
+            "version",
+            "build",
+            "getApplicationProtocol",
+            "isBoringSSLFIPSBuild"
+        ],
+        "only_oem_methods": [
+            "setAlpnProtocols",
+            "toProtocolString",
+            "getAlpnSelectedProtocol"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/AbstractSessionContext",
+        "only_aosp_methods": [
+            "removeSession"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLECGroupContext",
+        "only_aosp_methods": [
+            "getCurveName"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLX509CertificateFactory",
+        "only_aosp_methods": [
+            "isMaybePkcs7"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/AbstractConscryptSocket",
+        "only_aosp_methods": [
+            "getApplicationProtocols",
+            "exportKeyingMaterial",
+            "getHandshakeApplicationProtocol",
+            "setApplicationProtocolSelector",
+            "getTlsUnique",
+            "setApplicationProtocols",
+            "getApplicationProtocol"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/SSLUtils",
+        "only_aosp_methods": [
+            "decodeX509CertificateChain",
+            "encodeProtocols",
+            "getCertificateFactory",
+            "toProtocolString",
+            "decodeProtocols",
+            "toProtocolBytes",
+            "encodeSubjectX509Principals",
+            "decodeX509Certificate",
+            "concat",
+            "getClientKeyTypeFromSignatureAlg"
+        ],
+        "only_oem_methods": [
+            "toLengthPrefixedList",
+            "encodeIssuerX509Principals"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLMac",
+        "only_aosp_methods": [
+            "updateDirect",
+            "doFinal"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/TrustedCertificateStore",
+        "only_aosp_methods": [
+            "findCertSet"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/Platform",
+        "only_aosp_methods": [
+            "serverNamePermitted",
+            "createFileDescriptorSocket",
+            "getOriginalHostNameFromInetAddress",
+            "supportsConscryptCertStore",
+            "newDefaultBlocklist",
+            "provideTrustManagerByDefault",
+            "newDefaultLogStore",
+            "getDefaultHostnameVerifier",
+            "isJavaxCertificateSupported",
+            "getDefaultCertKeyStore",
+            "wrapEngine",
+            "fromGCMParameters",
+            "getMillisSinceBoot",
+            "supportsX509ExtendedTrustManager",
+            "unwrapEngine",
+            "getDefaultProviderName",
+            "countTlsHandshake",
+            "newDefaultPolicy",
+            "createEngineSocket",
+            "newDefaultCertStore"
+        ],
+        "only_oem_methods": [
+            "unwrapSSLSession",
+            "isLiteralIpAddress"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLBIOInputStream",
+        "only_aosp_methods": [
+            "read"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/SSLParametersImpl",
+        "only_aosp_methods": [
+            "getApplicationProtocols",
+            "cloneWithTrustManager",
+            "filterFromCipherSuites",
+            "setAlgorithmConstraints",
+            "setApplicationProtocolSelector",
+            "setSNIMatchers",
+            "setApplicationProtocols",
+            "getSNIMatchers",
+            "getAlgorithmConstraints",
+            "getApplicationProtocolSelector"
+        ],
+        "only_oem_methods": [
+            "setAlpnProtocols",
+            "concat",
+            "getAlpnProtocols"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/ConscryptEngineSocket",
+        "only_aosp_methods": [
+            "getApplicationProtocols",
+            "isHandshaking",
+            "doHandshake",
+            "renegotiate",
+            "setHandshakeTimeout",
+            "getTlsUnique",
+            "processDataFromSocket",
+            "getDelegatingTrustManager",
+            "checkServerTrusted",
+            "setBufferAllocator",
+            "getHandshakeApplicationProtocol",
+            "chooseServerAlias",
+            "release",
+            "setApplicationProtocols",
+            "checkClientTrusted",
+            "drainOutgoingQueue",
+            "exportKeyingMaterial",
+            "readUntilDataAvailable",
+            "setApplicationProtocolSelector",
+            "chooseClientAlias",
+            "getAcceptedIssuers",
+            "getApplicationProtocol"
+        ],
+        "only_oem_methods": [
+            "setAlpnProtocols",
+            "getUnderlyingChannel",
+            "readInternal",
+            "getAlpnSelectedProtocol"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/SSLNullSession",
+        "only_aosp_methods": [
+            "getStatusResponses",
+            "getRequestedServerName",
+            "getApplicationProtocol",
+            "getPeerSignedCertificateTimestamp"
+        ],
+        "only_oem_methods": [
+            "isNullSession"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/ActiveSession",
+        "only_aosp_methods": [
+            "onPeerCertificateAvailable",
+            "getApplicationProtocol"
+        ],
+        "only_oem_methods": [
+            "resetId",
+            "onSessionEstablished",
+            "getX509PeerCertificates",
+            "notifyUnbound"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLCipherRSA",
+        "only_aosp_methods": [
+            "engineGetKeySize"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLX509CRL",
+        "only_aosp_methods": [
+            "toDate"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLProvider",
+        "only_aosp_methods": [
+            "putXDHKeyAgreementImplClass"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLCipher",
+        "only_aosp_methods": [
+            "engineGetKeySize",
+            "getParameterSpec",
+            "getNormalized"
+        ],
+        "only_oem_methods": [
+            "expand",
+            "getCipherName",
+            "arraysAreEqual",
+            "getEVP_AEAD",
+            "checkInitialization",
+            "engineUpdateAAD",
+            "reset",
+            "throwAEADBadTagExceptionIfAvailable"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/NativeCrypto",
+        "only_aosp_methods": [
+            "setHasApplicationProtocolSelector",
+            "asn1_read_oid",
+            "EVP_aead_chacha20_poly1305",
+            "asn1_write_null",
+            "SSL_get0_peer_certificates",
+            "CMAC_Init",
+            "EC_KEY_marshal_curve_name",
+            "SSL_SESSION_should_be_single_use",
+            "asn1_write_flush",
+            "asn1_read_null",
+            "CMAC_Update",
+            "ENGINE_SSL_force_read",
+            "SSL_get_tls_unique",
+            "setLocalCertsAndPrivateKey",
+            "X25519_keypair",
+            "CMAC_CTX_new",
+            "asn1_read_next_tag_is",
+            "asn1_read_tagged",
+            "get_X509_tbs_cert",
+            "asn1_write_tag",
+            "serverCertificateRequested",
+            "setApplicationProtocols",
+            "getProtocolConstant",
+            "EVP_aead_aes_256_gcm_siv",
+            "CMAC_CTX_free",
+            "EVP_AEAD_CTX_seal_buf",
+            "chacha20_encrypt_decrypt",
+            "SSL_get_signature_algorithm_key_type",
+            "SSL_set_protocol_versions",
+            "CMAC_UpdateDirect",
+            "selectApplicationProtocol",
+            "CMAC_Final",
+            "asn1_write_oid",
+            "usesBoringSSL_FIPS_mode",
+            "X25519",
+            "SSL_export_keying_material",
+            "EVP_aead_aes_128_gcm_siv",
+            "get_X509_tbs_cert_without_ext",
+            "getApplicationProtocol",
+            "getProtocolRange",
+            "EVP_AEAD_CTX_open_buf",
+            "EC_KEY_parse_curve_name"
+        ],
+        "only_oem_methods": [
+            "ENGINE_SSL_read_BIO_heap",
+            "ENGINE_SSL_write_BIO_heap",
+            "SSL_check_private_key",
+            "SSL_get0_alpn_selected",
+            "ENGINE_SSL_write_heap",
+            "SSL_get_peer_cert_chain",
+            "SSL_shutdown_BIO",
+            "SSL_get_last_error_number",
+            "SSL_get_certificate",
+            "X509_dup",
+            "SSL_get_error_string",
+            "SSL_use_PrivateKey",
+            "ERR_peek_last_error",
+            "ENGINE_SSL_read_heap",
+            "SSL_configure_alpn",
+            "get_X509_cert_info_enc",
+            "SSL_use_certificate",
+            "X509_delete_ext"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/ConscryptFileDescriptorSocket",
+        "only_aosp_methods": [
+            "getApplicationProtocols",
+            "available",
+            "provideHandshakeSession",
+            "provideSession",
+            "selectApplicationProtocol",
+            "exportKeyingMaterial",
+            "getHandshakeApplicationProtocol",
+            "setApplicationProtocolSelector",
+            "provideAfterHandshakeSession",
+            "serverCertificateRequested",
+            "getTlsUnique",
+            "setApplicationProtocols",
+            "transitionTo",
+            "getApplicationProtocol"
+        ],
+        "only_oem_methods": [
+            "setAlpnProtocols",
+            "getAlpnSelectedProtocol"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLECDHKeyAgreement",
+        "only_aosp_methods": [
+            "convertPublicKey",
+            "computeKey",
+            "getOutputSize",
+            "convertPrivateKey"
+        ],
+        "only_oem_methods": [
+            "engineInit",
+            "engineGenerateSecret",
+            "checkCompleted",
+            "engineDoPhase"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLX509Certificate",
+        "only_aosp_methods": [
+            "getTBSCertificateWithoutExtension",
+            "toDate"
+        ],
+        "only_oem_methods": [
+            "withDeletedExtension",
+            "createCertChain"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/InternalUtil",
+        "only_aosp_methods": [],
+        "only_oem_methods": [
+            "getOcspSingleExtension"
+        ]
+    },
+    {
+        "class_name": "android/org/conscrypt/OpenSSLKey",
+        "only_aosp_methods": [
+            "isHardwareBacked"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/ClientSessionContext",
+        "only_aosp_methods": [
+            "putSession",
+            "removeSession"
+        ],
+        "only_oem_methods": []
+    },
+    {
+        "class_name": "android/org/conscrypt/CryptoUpcalls",
+        "only_aosp_methods": [
+            "rsaSignDigestWithPrivateKey",
+            "rsaOpWithPrivateKey",
+            "ecSignDigestWithPrivateKey",
+            "signDigestWithPrivateKey"
+        ],
+        "only_oem_methods": [
+            "isOurProvider",
+            "rawSignDigestWithPrivateKey"
+        ]
+    }
+]

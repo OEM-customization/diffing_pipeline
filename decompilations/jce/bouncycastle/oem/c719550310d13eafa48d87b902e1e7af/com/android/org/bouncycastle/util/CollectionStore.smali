@@ -1,0 +1,165 @@
+.class public Lcom/android/org/bouncycastle/util/CollectionStore;
+.super Ljava/lang/Object;
+.source "CollectionStore.java"
+
+# interfaces
+.implements Lcom/android/org/bouncycastle/util/Store;
+.implements Lcom/android/org/bouncycastle/util/Iterable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lcom/android/org/bouncycastle/util/Store",
+        "<TT;>;",
+        "Lcom/android/org/bouncycastle/util/Iterable",
+        "<TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private _local:Ljava/util/Collection;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Collection",
+            "<TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/Collection;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection",
+            "<TT;>;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 21
+    .local p0, "this":Lcom/android/org/bouncycastle/util/CollectionStore;, "Lcom/android/org/bouncycastle/util/CollectionStore<TT;>;"
+    .local p1, "collection":Ljava/util/Collection;, "Ljava/util/Collection<TT;>;"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 24
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iput-object v0, p0, Lcom/android/org/bouncycastle/util/CollectionStore;->_local:Ljava/util/Collection;
+
+    .line 25
+    return-void
+.end method
+
+
+# virtual methods
+.method public getMatches(Lcom/android/org/bouncycastle/util/Selector;)Ljava/util/Collection;
+    .registers 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/android/org/bouncycastle/util/Selector",
+            "<TT;>;)",
+            "Ljava/util/Collection",
+            "<TT;>;"
+        }
+    .end annotation
+
+    .prologue
+    .line 35
+    .local p0, "this":Lcom/android/org/bouncycastle/util/CollectionStore;, "Lcom/android/org/bouncycastle/util/CollectionStore<TT;>;"
+    .local p1, "selector":Lcom/android/org/bouncycastle/util/Selector;, "Lorg/bouncycastle/util/Selector<TT;>;"
+    if-nez p1, :cond_a
+
+    .line 37
+    new-instance v3, Ljava/util/ArrayList;
+
+    iget-object v4, p0, Lcom/android/org/bouncycastle/util/CollectionStore;->_local:Ljava/util/Collection;
+
+    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    return-object v3
+
+    .line 41
+    :cond_a
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 42
+    .local v0, "col":Ljava/util/List;, "Ljava/util/List<TT;>;"
+    iget-object v3, p0, Lcom/android/org/bouncycastle/util/CollectionStore;->_local:Ljava/util/Collection;
+
+    invoke-interface {v3}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    .line 44
+    .local v1, "iter":Ljava/util/Iterator;, "Ljava/util/Iterator<TT;>;"
+    :cond_15
+    :goto_15
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_29
+
+    .line 46
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 48
+    .local v2, "obj":Ljava/lang/Object;, "TT;"
+    invoke-interface {p1, v2}, Lcom/android/org/bouncycastle/util/Selector;->match(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_15
+
+    .line 50
+    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_15
+
+    .line 54
+    .end local v2    # "obj":Ljava/lang/Object;, "TT;"
+    :cond_29
+    return-object v0
+.end method
+
+.method public iterator()Ljava/util/Iterator;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator",
+            "<TT;>;"
+        }
+    .end annotation
+
+    .prologue
+    .line 60
+    .local p0, "this":Lcom/android/org/bouncycastle/util/CollectionStore;, "Lcom/android/org/bouncycastle/util/CollectionStore<TT;>;"
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Lcom/android/org/bouncycastle/util/CollectionStore;->getMatches(Lcom/android/org/bouncycastle/util/Selector;)Ljava/util/Collection;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    return-object v0
+.end method

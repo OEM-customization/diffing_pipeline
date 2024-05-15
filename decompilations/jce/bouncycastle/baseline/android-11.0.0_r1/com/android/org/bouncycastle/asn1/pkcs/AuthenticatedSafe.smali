@@ -1,0 +1,220 @@
+.class public Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;
+.super Lcom/android/org/bouncycastle/asn1/ASN1Object;
+.source "AuthenticatedSafe.java"
+
+
+# instance fields
+.field private blacklist info:[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+.field private blacklist isBer:Z
+
+
+# direct methods
+.method private constructor blacklist <init>(Lcom/android/org/bouncycastle/asn1/ASN1Sequence;)V
+    .registers 5
+    .param p1, "seq"    # Lcom/android/org/bouncycastle/asn1/ASN1Sequence;
+
+    .line 22
+    invoke-direct {p0}, Lcom/android/org/bouncycastle/asn1/ASN1Object;-><init>()V
+
+    .line 18
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->isBer:Z
+
+    .line 23
+    invoke-virtual {p1}, Lcom/android/org/bouncycastle/asn1/ASN1Sequence;->size()I
+
+    move-result v0
+
+    new-array v0, v0, [Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    iput-object v0, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->info:[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    .line 25
+    const/4 v0, 0x0
+
+    .local v0, "i":I
+    :goto_f
+    iget-object v1, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->info:[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    array-length v2, v1
+
+    if-eq v0, v2, :cond_21
+
+    .line 27
+    invoke-virtual {p1, v0}, Lcom/android/org/bouncycastle/asn1/ASN1Sequence;->getObjectAt(I)Lcom/android/org/bouncycastle/asn1/ASN1Encodable;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;->getInstance(Ljava/lang/Object;)Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    move-result-object v2
+
+    aput-object v2, v1, v0
+
+    .line 25
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_f
+
+    .line 30
+    .end local v0    # "i":I
+    :cond_21
+    instance-of v0, p1, Lcom/android/org/bouncycastle/asn1/BERSequence;
+
+    iput-boolean v0, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->isBer:Z
+
+    .line 31
+    return-void
+.end method
+
+.method public constructor blacklist <init>([Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;)V
+    .registers 3
+    .param p1, "info"    # [Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    .line 51
+    invoke-direct {p0}, Lcom/android/org/bouncycastle/asn1/ASN1Object;-><init>()V
+
+    .line 18
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->isBer:Z
+
+    .line 52
+    invoke-direct {p0, p1}, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->copy([Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;)[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->info:[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    .line 53
+    return-void
+.end method
+
+.method private blacklist copy([Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;)[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+    .registers 5
+    .param p1, "infos"    # [Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    .line 62
+    array-length v0, p1
+
+    new-array v0, v0, [Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    .line 64
+    .local v0, "tmp":[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    invoke-static {p1, v2, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 66
+    return-object v0
+.end method
+
+.method public static blacklist getInstance(Ljava/lang/Object;)Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;
+    .registers 3
+    .param p0, "o"    # Ljava/lang/Object;
+
+    .line 36
+    instance-of v0, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;
+
+    if-eqz v0, :cond_8
+
+    .line 38
+    move-object v0, p0
+
+    check-cast v0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;
+
+    return-object v0
+
+    .line 41
+    :cond_8
+    if-eqz p0, :cond_14
+
+    .line 43
+    new-instance v0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;
+
+    invoke-static {p0}, Lcom/android/org/bouncycastle/asn1/ASN1Sequence;->getInstance(Ljava/lang/Object;)Lcom/android/org/bouncycastle/asn1/ASN1Sequence;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;-><init>(Lcom/android/org/bouncycastle/asn1/ASN1Sequence;)V
+
+    return-object v0
+
+    .line 46
+    :cond_14
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public blacklist getContentInfo()[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+    .registers 2
+
+    .line 57
+    iget-object v0, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->info:[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    invoke-direct {p0, v0}, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->copy([Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;)[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public blacklist toASN1Primitive()Lcom/android/org/bouncycastle/asn1/ASN1Primitive;
+    .registers 5
+
+    .line 71
+    new-instance v0, Lcom/android/org/bouncycastle/asn1/ASN1EncodableVector;
+
+    invoke-direct {v0}, Lcom/android/org/bouncycastle/asn1/ASN1EncodableVector;-><init>()V
+
+    .line 73
+    .local v0, "v":Lcom/android/org/bouncycastle/asn1/ASN1EncodableVector;
+    const/4 v1, 0x0
+
+    .local v1, "i":I
+    :goto_6
+    iget-object v2, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->info:[Lcom/android/org/bouncycastle/asn1/pkcs/ContentInfo;
+
+    array-length v3, v2
+
+    if-eq v1, v3, :cond_13
+
+    .line 75
+    aget-object v2, v2, v1
+
+    invoke-virtual {v0, v2}, Lcom/android/org/bouncycastle/asn1/ASN1EncodableVector;->add(Lcom/android/org/bouncycastle/asn1/ASN1Encodable;)V
+
+    .line 73
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_6
+
+    .line 78
+    .end local v1    # "i":I
+    :cond_13
+    iget-boolean v1, p0, Lcom/android/org/bouncycastle/asn1/pkcs/AuthenticatedSafe;->isBer:Z
+
+    if-eqz v1, :cond_1d
+
+    .line 80
+    new-instance v1, Lcom/android/org/bouncycastle/asn1/BERSequence;
+
+    invoke-direct {v1, v0}, Lcom/android/org/bouncycastle/asn1/BERSequence;-><init>(Lcom/android/org/bouncycastle/asn1/ASN1EncodableVector;)V
+
+    return-object v1
+
+    .line 84
+    :cond_1d
+    new-instance v1, Lcom/android/org/bouncycastle/asn1/DLSequence;
+
+    invoke-direct {v1, v0}, Lcom/android/org/bouncycastle/asn1/DLSequence;-><init>(Lcom/android/org/bouncycastle/asn1/ASN1EncodableVector;)V
+
+    return-object v1
+.end method

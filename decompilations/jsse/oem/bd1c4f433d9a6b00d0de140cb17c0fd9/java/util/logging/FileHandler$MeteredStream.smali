@@ -1,0 +1,166 @@
+.class Ljava/util/logging/FileHandler$MeteredStream;
+.super Ljava/io/OutputStream;
+.source "FileHandler.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljava/util/logging/FileHandler;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "MeteredStream"
+.end annotation
+
+
+# instance fields
+.field final out:Ljava/io/OutputStream;
+
+.field final synthetic this$0:Ljava/util/logging/FileHandler;
+
+.field written:I
+
+
+# direct methods
+.method constructor <init>(Ljava/util/logging/FileHandler;Ljava/io/OutputStream;I)V
+    .registers 4
+    .param p1, "this$0"    # Ljava/util/logging/FileHandler;
+    .param p2, "out"    # Ljava/io/OutputStream;
+    .param p3, "written"    # I
+
+    .prologue
+    .line 172
+    iput-object p1, p0, Ljava/util/logging/FileHandler$MeteredStream;->this$0:Ljava/util/logging/FileHandler;
+
+    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
+
+    .line 173
+    iput-object p2, p0, Ljava/util/logging/FileHandler$MeteredStream;->out:Ljava/io/OutputStream;
+
+    .line 174
+    iput p3, p0, Ljava/util/logging/FileHandler$MeteredStream;->written:I
+
+    .line 175
+    return-void
+.end method
+
+
+# virtual methods
+.method public close()V
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 202
+    iget-object v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
+
+    .line 203
+    return-void
+.end method
+
+.method public flush()V
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 197
+    iget-object v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
+
+    .line 198
+    return-void
+.end method
+
+.method public write(I)V
+    .registers 3
+    .param p1, "b"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 179
+    iget-object v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
+
+    .line 180
+    iget v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->written:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->written:I
+
+    .line 181
+    return-void
+.end method
+
+.method public write([B)V
+    .registers 4
+    .param p1, "buff"    # [B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 185
+    iget-object v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
+
+    .line 186
+    iget v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->written:I
+
+    array-length v1, p1
+
+    add-int/2addr v0, v1
+
+    iput v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->written:I
+
+    .line 187
+    return-void
+.end method
+
+.method public write([BII)V
+    .registers 5
+    .param p1, "buff"    # [B
+    .param p2, "off"    # I
+    .param p3, "len"    # I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 191
+    iget-object v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->out:Ljava/io/OutputStream;
+
+    invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
+
+    .line 192
+    iget v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->written:I
+
+    add-int/2addr v0, p3
+
+    iput v0, p0, Ljava/util/logging/FileHandler$MeteredStream;->written:I
+
+    .line 193
+    return-void
+.end method
