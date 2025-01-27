@@ -48,7 +48,7 @@ def diff_binaries(device, baseline):
     target_subdirs = ['system/lib', 'system/lib64', 'system_ext/lib', 'system_ext/lib64']
 
     device_path = device
-    baseline_path = os.path.join(config.current_path, "decompilations", "jca", "baseline", baseline)
+    baseline_path = os.path.join(config.current_path, "firmware_images", baseline)
 
     device_files = find_boring_files(device_path, file_names, target_subdirs)
     baseline_files = find_boring_files(baseline_path, file_names, target_subdirs)
