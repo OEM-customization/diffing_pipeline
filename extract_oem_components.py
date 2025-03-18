@@ -85,9 +85,7 @@ def extract_jsse(device):
     with open(os.path.join(config.current_path,'decompilation_results/hashes_jsse.txt'), 'a') as f1:
         if (matching_files != []):
             for matched_file in matching_files:
- 
                 hash_val = calc_hash(matched_file)
-                
                 hash_folder = os.path.join(dest_parent, dest_vendor, hash_val)
 
                 result = create_decomp_dest(hash_folder)
@@ -124,11 +122,9 @@ def extract_conscrypt(device):
     with open(os.path.join(config.current_path,'decompilation_results/files_conscrypt.txt'), 'a') as f0:
         for root, dirs, files in os.walk(folder_path):
             for file in files:
-
                 for file_name in file_names:
                     if file == file_name:
                         full_path = os.path.join(root, file)
-#                         print("Found file",full_path)
                         hash_file = calc_hash(full_path)
                         f0.write("Device:{}\t Hash Value: {}\t Matched File: {}\n".format(device,hash_file, full_path))
                         matching_files.append(full_path)
@@ -137,19 +133,13 @@ def extract_conscrypt(device):
     with open(os.path.join(config.current_path,'decompilation_results/hashes_conscrypt.txt'), 'a') as f1:                 
         if (matching_files != []):
             for matched_file in matching_files:
-                print(matched_file)
-
                 hash_val = calc_hash(matched_file)
-
                 hash_folder = os.path.join(dest_parent, dest_vendor, hash_val)
-
 
                 result = create_decomp_dest(hash_folder)
 
                 if (result == 'make'):
-
                     decomp_exec(matched_file, hash_folder)
-
                     if (os.path.exists(hash_folder)):
                         f1.write("Hash Value: {}\t Matched File: {}\n".format(hash_val, full_path))
 
@@ -173,15 +163,12 @@ def extract_okhttp(device):
     dest_parent = os.path.join(config.current_path,'decompilations/jce/okhttp')
     
     dest_vendor = 'oem'
-    
     matching_files = []
-    
     
     
     with open(os.path.join(config.current_path,'decompilation_results/files_okhttp.txt'), 'a') as f0:
         for root, dirs, files in os.walk(folder_path):
             for file in files:
-    #             print(file)
                 for file_name in file_names:
                     if file == file_name:
                         full_path = os.path.join(root, file)
@@ -192,7 +179,6 @@ def extract_okhttp(device):
     with open(os.path.join(config.current_path,'decompilation_results/hashes_okhttp.txt'), 'a') as f1:                    
         if (matching_files != []):
             for matched_file in matching_files:
-#                 print(matched_file)
                 hash_val = calc_hash(matched_file)
 
                 hash_folder = os.path.join(dest_parent, dest_vendor, hash_val)
@@ -230,7 +216,6 @@ def extract_bouncy(device):
     with open(os.path.join(config.current_path,'decompilation_results/files_bouncy.txt'), 'a') as f0:
         for root, dirs, files in os.walk(folder_path):
             for file in files:
-    #             print(file)
                 for file_name in file_names:
                     if file == file_name:
                         full_path = os.path.join(root, file)
@@ -242,7 +227,6 @@ def extract_bouncy(device):
     with open(os.path.join(config.current_path,'decompilation_results/hashes_bouncy.txt'), 'a') as f1:            
         if (matching_files != []):
             for matched_file in matching_files:
-#                 print(matched_file)
                 hash_val = calc_hash(matched_file)
 
                 hash_folder = os.path.join(dest_parent, dest_vendor, hash_val)
@@ -250,7 +234,6 @@ def extract_bouncy(device):
                 result = create_decomp_dest(hash_folder)
 
                 if (result == 'make'):
-
                     decomp_exec(matched_file, hash_folder)
                     
                     if (os.path.exists(hash_folder)):
