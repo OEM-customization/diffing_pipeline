@@ -163,8 +163,8 @@ def custom_split(value):
         return value
 
 def build_baseline(ver,fg):
-#     tags_path = os.path.join(config.current_path,'Android_Tags.csv')
-#     androidTags = pd.read_csv(tags_path, index_col=None)
+    tags_path = os.path.join(config.current_path,'Android_Tags.csv')
+    androidTags = pd.read_csv(tags_path, index_col=None)
     
     build_id = fg.split('/')[3]
     tag_row = config.androidTags[config.androidTags['build_id'] == build_id]
