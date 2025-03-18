@@ -73,14 +73,13 @@ def main():
 
 #     Move to decompilation of the network components
     
-#     print(Fore.CYAN + "\nJava based diffing---JSSE, JCE") 
-#     print(Fore.RESET)
-#     diffing.diff_network_components(directory,baseline)
+    print(Fore.CYAN + "\nJava based diffing---JSSE, JCE") 
+    print(Fore.RESET)
+    diffing.diff_network_components(directory,baseline)
     
-    
-#     print(Fore.CYAN + "\nRoot store diffing") 
-#     print(Fore.RESET)
-#     extract_cert_diff.diff_root_stores(directory,baseline)
+    print(Fore.CYAN + "\nRoot store diffing") 
+    print(Fore.RESET)
+    extract_cert_diff.diff_root_stores(directory,baseline)
     
     print(Fore.CYAN + "\nJCA diffing")
     print(Fore.RESET)
